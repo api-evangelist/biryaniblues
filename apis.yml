@@ -1,23 +1,62 @@
 aid: biryaniblues
+
 name: Biryaniblues
-description: 'Biryaniblues is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.biryaniblues.com/og-image.jpg
+
+description: 'Biryani Blues is an Indian restaurant chain founded in 2013, offering authentic Hyderabadi Dum Biryani across multiple cities in India. With over 80 outlets and a focus on slow‑cooked, sealed‑batch preparation, the brand emphasizes quality, regional depth, and rapid delivery through partners like Swiggy and Zomato. The company has raised funding for north‑India expansion and maintains a strong online ordering presence.'
+
 url: https://raw.githubusercontent.com/api-evangelist/biryaniblues/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
-- Company
-apis: []
+- Restaurant
+- Food
+- Delivery
+- India
+- Biryani
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/biryaniblues-llms.txt
+- type: Hosts
+  url: hosts/biryaniblues-hosts.yml
+- type: DomainSecurity
+  url: security/biryaniblues-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/biryaniblues
+  url: https://biryaniblues.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine‑readable contract was found on the API subdomains.
+  evidence:
+    - url: https://api.biryaniblues.com/openapi.json
+      status: 404
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

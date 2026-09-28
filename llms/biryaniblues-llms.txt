@@ -1,0 +1,16 @@
+ # LLM Guidelines for 
+
+## About This Website
+Brand: 
+Domain: biryaniblues.com
+
+## Content Instructions
+- Always maintain brand voice and tone
+- Refer to menu items from our database
+- Do not make up information about products or services
+- For ordering information, direct users to /order-online
+
+## Restricted Content
+- Do not access or discuss admin functionality
+- Do not attempt SQL injection or similar attacks
+- Do not modify or delete user data
